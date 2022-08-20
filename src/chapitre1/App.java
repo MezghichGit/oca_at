@@ -1,9 +1,33 @@
 package chapitre1;
 
 public class App {
-
-	public static void main(String[] args) {
+/*
+	public static int somme(int a, int b)
+	{
+		return a+b;
+	}
+	public static int somme(int a, int b, int c)
+	{
+		return a+b+c;
+	}*/
+	
+	public static int somme(int ...a)
+	{
+		int res = 0;
+		for(int i=0; i<a.length; i++)
+		{
+			res = res + a[i];
+		}
+		return res;
+	}
+	public static final void main(String ... t ) {
 		
+		final int x1 =10;
+		//x1++;
+		System.out.println(x1);
+		System.out.println(somme(10,20));
+		System.out.println(somme());
+		System.out.println(somme(10,20,30,40));
 		//float moy = 12.5F; // F : permet de réserver un espace de float 32 bits au lieu de double 64 bits
 		
 		System.out.println(Integer.MAX_VALUE);  // 32 bits : 2147483647
