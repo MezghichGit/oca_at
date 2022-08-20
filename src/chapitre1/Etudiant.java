@@ -1,10 +1,10 @@
 package chapitre1;
 
-public class Etudiant {
+public class Etudiant extends Personne{
 	
 	//Les attributs d'instance
 	
-	String nom;
+	String nom="Etudiant";
 	int age;
 	boolean travail;
 	char niveau;
@@ -20,19 +20,26 @@ public class Etudiant {
 	
 	public Etudiant() // declaration explicite du constructeur par défaut
 	{
+		super(10);
 		System.out.println("Un constructeur");
 	}
 	
 	public Etudiant(int age) // Constructeur paramétré.
 	{
+		this(); // appel au constructeur par défaut
 		this.age = age;
 		System.out.println("Un constructeur avec 1 paramètre age");
 	}
 	public Etudiant(String nom) // Constructeur paramétré.
 	{
+		this(10); //appel au constructeur avec paramètre int
 		this.nom = nom;
 		System.out.println("Un constructeur avec 1 paramètre nom");
 	}
 
+	public void info()
+	{
+		System.out.println(this.nom+" "+super.nom);
+	}
 	
 }

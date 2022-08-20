@@ -5,6 +5,7 @@ public class Main extends Object {
 	public static void main(String[] args) {
 		//System.out.println(Etudiant.nbre);
 		Etudiant e3 = new Etudiant();
+		//e3.info();
 		/*
 		int x=0;  // une variable locale
 		System.out.println(x);
