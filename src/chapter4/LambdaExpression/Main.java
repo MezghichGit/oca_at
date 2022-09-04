@@ -3,7 +3,18 @@ package chapter4.LambdaExpression;
 import java.util.ArrayList;
 import java.util.function.Predicate;
 
+import chapter4.Animal;
+
 public class Main {
+	public Animal infos()
+	{
+		return null;
+	}
+	
+	public String infost()
+	{
+		return "oca";
+	}
 
 	public static void main(String[] args) {
 		
